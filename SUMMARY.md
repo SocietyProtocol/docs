@@ -13,7 +13,7 @@
 * [Ecosystem & Partner Badges](badges/ecosystem.md)
 
 ## ⚡ SPEC Token & Genesis Energy
-* [SPEC Token & Contribution Mechanics](concepts/spec-token.md)
+* [SPEC Token & Economics](concepts/spec-token.md)
 * [Genesis Energy & Instance Airdrops](concepts/genesis-energy.md)
 
 ## 👥 Directories

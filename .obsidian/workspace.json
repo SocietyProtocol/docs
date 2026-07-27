@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "concepts/outpost-launchpad.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "outpost-launchpad"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "concepts/outpost-launchpad.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for README"
+              "title": "Backlinks for outpost-launchpad"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "concepts/outpost-launchpad.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from README"
+              "title": "Outgoing links from outpost-launchpad"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "concepts/outpost-launchpad.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline of outpost-launchpad"
             }
           }
         ]
@@ -185,6 +185,12 @@
   },
   "active": "7ae5f4c6eceafa0f",
   "lastOpenFiles": [
+    "extrainfo2.md",
+    "README.md",
+    "concepts/codebase-vs-instances.md",
+    "SUMMARY.md",
+    "guides/create-badges.md",
+    "badges/ecosystem.md",
     "SP badges images/moderator.png",
     "SP badges images/Silver VIP.png",
     "SP badges images/Security Council.png",
@@ -195,18 +201,12 @@
     "SP badges images/Core Team.png",
     "SP badges images/Contributor.png",
     "SP badges images/Bronze VIP.png",
-    "SP badges images/Advisor.png",
     "SP badges images",
     "extrainfo.md",
-    "badges/ecosystem.md",
     "badges/governance-core.md",
-    "README.md",
     "concepts/badges.md",
     "concepts/genesis-energy.md",
     "concepts/spec-token.md",
-    "concepts/codebase-vs-instances.md",
-    "concepts/outpost-launchpad.md",
-    "SUMMARY.md",
-    "guides/create-badges.md"
+    "concepts/outpost-launchpad.md"
   ]
 }

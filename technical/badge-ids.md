@@ -6,19 +6,19 @@ All official badges are minted as **ERC-1155** tokens under the `SocietyProtocol
 
 ## 📋 Official Badge ID Registry Table
 
-| Badge Name | Badge ID | Mint Rule / Privilege | Transferability | Target Audience |
-| :--- | :---: | :--- | :---: | :--- |
-| **DAO Badge** | `11` | Protocol Governance Access | Soulbound | DAO Members |
-| **Security Council Badge** | `12` | Security Council Multisig Keyholder | Soulbound | Security Council Keys |
-| **Governor Badge** | `13` | Meritocratic DAO Voting Seat | Soulbound | Appointed Governors |
-| **Bronze VIP Badge** | `14` | Access to Bronze VIP Channels | Locked via SPEC | Outpost Members |
-| **Silver VIP Badge** | `15` | Access to Silver VIP Channels | Locked via SPEC | Outpost Members |
-| **Gold VIP Badge** | `16` | Access to Gold VIP Channels | Locked via SPEC | Outpost Members |
-| **Advisor Badge** | `24` | Strategic Advisor Recognition | Soulbound | Protocol Advisors |
-| **Core Team Badge** | `25` | Awarded after 6 months of service | Soulbound | Full-Time Core Team |
-| **Contributor / Builder Badge** | `26` | Code / Research Contribution | Soulbound | Ecosystem Developers |
-| **ICO Participant Badge** | `27` | Fundraiser Contribution | Soulbound | Early Backers |
-| **Moderator Badge** | `28` | Outpost Forum / Channel Moderator | Soulbound | Community Ops |
+| Preview | Badge Name | Badge ID | Mint Rule / Privilege | Transferability | Target Audience |
+| :---: | :--- | :---: | :--- | :---: | :--- |
+| ![SP DAO](../SP%20badges%20images/SP%20DAO.png) | **DAO Badge** | `11` | Protocol Governance Access | Soulbound | DAO Members |
+| ![Security Council](../SP%20badges%20images/Security%20Council.png) | **Security Council Badge** | `12` | Security Council Multisig Keyholder | Soulbound | Security Council Keys |
+| ![Governor](../SP%20badges%20images/Governor.png) | **Governor Badge** | `13` | Meritocratic DAO Voting Seat | Soulbound | Appointed Governors |
+| ![Bronze VIP](../SP%20badges%20images/Bronze%20VIP.png) | **Bronze VIP Badge** | `14` | Access to Bronze VIP Channels | Locked via SPEC | Outpost Members |
+| ![Silver VIP](../SP%20badges%20images/Silver%20VIP.png) | **Silver VIP Badge** | `15` | Access to Silver VIP Channels | Locked via SPEC | Outpost Members |
+| ![Gold VIP](../SP%20badges%20images/Gold%20VIP.png) | **Gold VIP Badge** | `16` | Access to Gold VIP Channels | Locked via SPEC | Outpost Members |
+| ![Advisor](../SP%20badges%20images/Advisor.png) | **Advisor Badge** | `24` | Strategic Advisor Recognition | Soulbound | Protocol Advisors |
+| ![Core Team](../SP%20badges%20images/Core%20Team.png) | **Core Team Badge** | `25` | Awarded after 6 months of service | Soulbound | Full-Time Core Team |
+| ![Contributor](../SP%20badges%20images/Contributor.png) | **Contributor / Builder Badge** | `26` | Code / Research Contribution | Soulbound | Ecosystem Developers |
+| ![ICO Participant](../SP%20badges%20images/ICO%20participant.png) | **ICO Participant Badge** | `27` | Fundraiser Contribution | Soulbound | Early Backers |
+| ![Moderator](../SP%20badges%20images/moderator.png) | **Moderator Badge** | `28` | Outpost Forum / Channel Moderator | Soulbound | Community Ops |
 
 ---
 
