@@ -65,3 +65,21 @@
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
   background-color: rgba(255, 255, 255, 0.05);
 }
+
+/* 5. Custom Logo Dark Mode Swap */
+[data-md-color-scheme="slate"] .md-header__button.md-logo img,
+[data-md-color-scheme="slate"] .md-nav__title .md-logo img {
+  content: url("../assets/Horizontal Logo White.svg");
+}
+
+/* 6. Center Site Title in Header */
+.md-header__title {
+  text-align: center;
+  margin-left: 0;
+}
+
+.md-header__title .md-header__topic {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

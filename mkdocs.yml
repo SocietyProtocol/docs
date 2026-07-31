@@ -3,6 +3,7 @@ site_description: Project Documentation and Technical Specs
 
 theme:
   name: material
+  logo: assets/Horizontal Logo Black.svg
   palette:
     # Light Mode
     - scheme: default
