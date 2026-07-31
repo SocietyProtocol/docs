@@ -58,4 +58,7 @@ nav:
   - Directories:
       - Partners: directories/partners.md
       - Team & Advisors: directories/team-advisors.md
-  - Extra Info: extrainfo2.md
+
+# Link custom styling
+extra_css:
+  - stylesheets/extra.css

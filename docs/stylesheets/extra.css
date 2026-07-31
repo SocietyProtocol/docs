@@ -1,0 +1,67 @@
+/* 1. Add clean border lines around the main content container and sidebar navigation */
+.md-main__inner {
+  margin-top: 1.5rem;
+}
+
+/* Card-like border around the main reading area */
+.md-content {
+  background-color: var(--md-default-bg-color);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+/* Dark mode adjustment for main content card */
+[data-md-color-scheme="slate"] .md-content {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: none;
+}
+
+/* 2. Add subtle background and border to sidebar navigation boxes */
+.md-sidebar__inner {
+  background-color: rgba(0, 0, 0, 0.015);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar__inner {
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* 3. Clearly separate Headings (H1, H2, H3) with dividing lines */
+.md-typeset h1 {
+  border-bottom: 2px solid var(--md-primary-fg-color);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.md-typeset h2 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* 4. Draw distinct borders around tables and code blocks */
+.md-typeset table:not([class]) {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+}
+
+/* Highlighting table headers */
+.md-typeset table:not([class]) th {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background-color: rgba(255, 255, 255, 0.05);
+}
