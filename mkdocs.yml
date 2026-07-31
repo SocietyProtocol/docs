@@ -1,0 +1,61 @@
+site_name: FritzDVL Documentation
+site_description: Project Documentation and Technical Specs
+
+theme:
+  name: material
+  palette:
+    # Light Mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark Mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.indexes # Category folders act as clickable landing pages
+    - navigation.expand # Side menu sections expand by default
+    - search.suggest # Live search suggestions
+    - search.highlight # Highlight matching search words on page
+    - content.code.copy # Adds a copy button to code blocks
+
+# Markdown Extensions (Enables callout/admonition boxes and rich formatting)
+markdown_extensions:
+  - admonition # Enables ::: note / ::: warning boxes
+  - pymdownx.details # Enables collapsible blocks
+  - pymdownx.superfences # Advanced code blocks and nested elements
+  - pymdownx.tabbed:
+      alternate_style: true # Enables tabbed content blocks
+  - attr_list
+
+# Explicit Navigation Layout
+nav:
+  - Overview: index.md
+  - Concepts:
+      - Badges Concept: concepts/badges.md
+      - Codebase vs Instances: concepts/codebase-vs-instances.md
+      - Genesis Energy: concepts/genesis-energy.md
+      - Outpost Launchpad: concepts/outpost-launchpad.md
+      - SPEC Token: concepts/spec-token.md
+  - Badges:
+      - Overview: badges/overview.md
+      - Ecosystem: badges/ecosystem.md
+      - Governance Core: badges/governance-core.md
+      - VIP Rooms: badges/vip-rooms.md
+  - Guides:
+      - Create Badges: guides/create-badges.md
+      - FAQ: guides/faq.md
+      - Lock SPEC VIP: guides/lock-spec-vip.md
+  - Technical:
+      - Badge IDs: technical/badge-ids.md
+      - Contracts: technical/contracts.md
+  - Directories:
+      - Partners: directories/partners.md
+      - Team & Advisors: directories/team-advisors.md
+  - Extra Info: extrainfo2.md
