@@ -183,11 +183,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "7ae5f4c6eceafa0f",
+  "active": "584a98490b357dc9",
   "lastOpenFiles": [
-    "extrainfo2.md",
-    "README.md",
+    "concepts/genesis-energy.md",
     "concepts/codebase-vs-instances.md",
+    "README.md",
+    "concepts/outpost-launchpad.md",
+    "extrainfo2.md",
     "SUMMARY.md",
     "guides/create-badges.md",
     "badges/ecosystem.md",
@@ -205,8 +207,6 @@
     "extrainfo.md",
     "badges/governance-core.md",
     "concepts/badges.md",
-    "concepts/genesis-energy.md",
-    "concepts/spec-token.md",
-    "concepts/outpost-launchpad.md"
+    "concepts/spec-token.md"
   ]
 }
