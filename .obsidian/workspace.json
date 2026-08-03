@@ -11,14 +11,10 @@
             "id": "7ae5f4c6eceafa0f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "concepts/outpost-launchpad.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "outpost-launchpad"
+              "title": "New tab"
             }
           }
         ]
