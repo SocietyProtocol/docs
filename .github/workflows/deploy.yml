@@ -27,13 +27,12 @@ jobs:
         run: |
           mkdocs build
 
-      - name: Deploy to VPS via Sync over SSH
-        uses: Burnett01/rsync-deployments@v9
+      - name: Deploy to VPS via SSH
+        uses: easingthemes/ssh-deploy@v5.1.0
         with:
-          switches: -avzr --delete
-          path: site/
-          remote_path: /var/www/docs.societyprotocol.io/
-          remote_host: ${{ secrets.SERVER_HOST }}
-          remote_user: ${{ secrets.SERVER_USER }}
-          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          remote_port: "22"
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: "-avzr --delete"
+          SOURCE: "site/"
+          REMOTE_HOST: ${{ secrets.SERVER_HOST }}
+          REMOTE_USER: ${{ secrets.SERVER_USER }}
+          TARGET: "/var/www/docs.societyprotocol.io/"
