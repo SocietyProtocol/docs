@@ -3,7 +3,7 @@ name: Deploy MkDocs to Hostinger VPS
 on:
   push:
     branches:
-      - main # Change to 'master' if your main branch is called master
+      - main
 
 jobs:
   build-and-deploy:
@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Install MkDocs & Dependencies
+      - name: Install MkDocs & Material Theme
         run: |
           python -m pip install --upgrade pip
           pip install mkdocs mkdocs-material
