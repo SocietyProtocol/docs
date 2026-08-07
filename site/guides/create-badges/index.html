@@ -1276,22 +1276,36 @@
 <p>This guide explains how third-party DAOs, NFT projects, and Web3 protocols can deploy custom ERC-1155 badge contracts using Society Protocol's <strong>CommunityWrapperFactory</strong> (<code>0x84ffd2805af9d0946e02Fe19Cd1eE58228669B0e</code>).</p>
 <hr />
 <h2 id="overview">💡 Overview</h2>
-<p>Deploying custom badges through the factory provides your project with instant compatibility across Society Protocol's ecosystem:
-* <strong>No Smart Contract Coding:</strong> Initialize permissioned ERC-1155 badges via single factory calls.
-* <strong>Automatic Registry Indexing:</strong> Deployed wrappers register immediately in <code>CommunityRegistry</code> (<code>0xEa00...EB76</code>).
-* <strong>Custom Minting &amp; Transfer Rules:</strong> Define whether your badges are soulbound, burnable, or transferable.</p>
+<p>Deploying custom badges through the factory provides your project with instant compatibility across Society Protocol's ecosystem:</p>
+<ul>
+<li><strong>No Smart Contract Coding:</strong> Initialize permissioned ERC-1155 badges via single factory calls.</li>
+<li><strong>Automatic Registry Indexing:</strong> Deployed wrappers register immediately in <code>CommunityRegistry</code> (<code>0xEa00...EB76</code>).</li>
+<li><strong>Custom Minting &amp; Transfer Rules:</strong> Define whether your badges are soulbound, burnable, or transferable.</li>
+</ul>
 <hr />
 <h2 id="deployment-methods">🛠️ Deployment Methods</h2>
 <h3 id="method-1-web-interface-recommended">Method 1: Web Interface (Recommended)</h3>
 <ol>
-<li>Navigate to the <strong><a href="https://app.societyprotocol.io/developers/create-wrapper">Community Developer Console</a></strong>.</li>
-<li>Connect your community admin wallet (or Safe multisig).</li>
-<li>Fill out your community metadata:</li>
+<li>
+<p>Navigate to the <strong><a href="https://app.societyprotocol.io/developers/create-wrapper">Community Developer Console</a></strong>.</p>
+</li>
+<li>
+<p>Connect your community admin wallet (or Safe multisig).</p>
+</li>
+<li>
+<p>Fill out your community metadata:</p>
+</li>
 <li><strong>Community Name:</strong> (e.g. <em>Acme DAO</em>)</li>
 <li><strong>Badge Symbol:</strong> (e.g. <em>ACME</em>)</li>
-<li><strong>Base URI:</strong> <code>ipfs://.../</code> (Metadata directory URI)</li>
-<li>Select permission flags (Mintable by admin, Transferable, Burnable).</li>
-<li>Click <strong>Deploy Community Wrapper</strong> and execute the transaction.</li>
+<li>
+<p><strong>Base URI:</strong> <code>ipfs://.../</code> (Metadata directory URI)</p>
+</li>
+<li>
+<p>Select permission flags (Mintable by admin, Transferable, Burnable).</p>
+</li>
+<li>
+<p>Click <strong>Deploy Community Wrapper</strong> and execute the transaction.</p>
+</li>
 </ol>
 <hr />
 <h3 id="method-2-smart-contract-interaction-cli-foundry-hardhat">Method 2: Smart Contract Interaction (CLI / Foundry / Hardhat)</h3>
@@ -1316,9 +1330,15 @@ interface<span class="w"> </span>ICommunityWrapperFactory<span class="w"> </span
 </code></pre></div>
 <hr />
 <h2 id="post-deployment-management">⚙️ Post-Deployment Management</h2>
-<p>Once deployed:
-1. <strong>Minting Badges:</strong> The assigned admin address can call <code>mintBadge(address to, uint256 id, uint256 amount)</code> on the returned <code>CommunityWrapper</code> instance.
-2. <strong>Hook Integration:</strong> Attach optional hooks (e.g. <code>SingleMintHook</code> or custom gating logic) to restrict issuance parameters.</p>
+<p>Once deployed:</p>
+<ol>
+<li>
+<p><strong>Minting Badges:</strong> The assigned admin address can call <code>mintBadge(address to, uint256 id, uint256 amount)</code> on the returned <code>CommunityWrapper</code> instance.</p>
+</li>
+<li>
+<p><strong>Hook Integration:</strong> Attach optional hooks (e.g. <code>SingleMintHook</code> or custom gating logic) to restrict issuance parameters.</p>
+</li>
+</ol>
 
 
 

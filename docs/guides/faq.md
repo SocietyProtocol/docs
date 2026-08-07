@@ -11,7 +11,9 @@ This page answers Frequently Asked Questions and provides a deep dive into **zkT
 ### Key Benefits
 
 1. **Privacy-Preserving:** Proven credentials (e.g. "User is over 18" or "User holds verified GitHub account") are verified on-chain **without** revealing passwords, personal identifying information, or API tokens.
+
 2. **Trustless Verification:** Proofs are verified directly by Society Protocol smart contract hooks (such as `SingleMintHook` at `0xc5cA...FC6D`).
+
 3. **Sybil Resistance:** Prevents bot farming by linking unique physical or off-chain identity proofs to single Ethereum addresses.
 
 ---

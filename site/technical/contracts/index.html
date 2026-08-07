@@ -1249,9 +1249,15 @@
 <hr />
 <h2 id="architectural-overview">🏗️ Architectural Overview</h2>
 <ol>
-<li><strong>ERC-1967 Proxies:</strong> Core contracts (<code>SocietyProtocolBadges</code>, <code>CommunityWrapperFactory</code>, <code>CommunityRegistry</code>) use transparent proxies. Integrations interact exclusively with proxy addresses.</li>
-<li><strong>Multisig Safes:</strong> Treasury and contract upgrades are managed by the <strong>SP DAO Safe</strong> (<code>0xdfdC...7579</code>). Emergency circuit breakers are managed by the <strong>Security Council Safe</strong> (<code>0xCc4F...98AC</code>).</li>
-<li><strong>Hooks:</strong> <code>SingleMintHook</code> (<code>0xc5cA...FC6D</code>) enforces strict single-token limits per account for soulbound badges.</li>
+<li>
+<p><strong>ERC-1967 Proxies:</strong> Core contracts (<code>SocietyProtocolBadges</code>, <code>CommunityWrapperFactory</code>, <code>CommunityRegistry</code>) use transparent proxies. Integrations interact exclusively with proxy addresses.</p>
+</li>
+<li>
+<p><strong>Multisig Safes:</strong> Treasury and contract upgrades are managed by the <strong>SP DAO Safe</strong> (<code>0xdfdC...7579</code>). Emergency circuit breakers are managed by the <strong>Security Council Safe</strong> (<code>0xCc4F...98AC</code>).</p>
+</li>
+<li>
+<p><strong>Hooks:</strong> <code>SingleMintHook</code> (<code>0xc5cA...FC6D</code>) enforces strict single-token limits per account for soulbound badges.</p>
+</li>
 </ol>
 
 

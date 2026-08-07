@@ -28,5 +28,7 @@ Canonical reference table for deployed smart contracts, proxies, implementations
 ## 🏗️ Architectural Overview
 
 1. **ERC-1967 Proxies:** Core contracts (`SocietyProtocolBadges`, `CommunityWrapperFactory`, `CommunityRegistry`) use transparent proxies. Integrations interact exclusively with proxy addresses.
+
 2. **Multisig Safes:** Treasury and contract upgrades are managed by the **SP DAO Safe** (`0xdfdC...7579`). Emergency circuit breakers are managed by the **Security Council Safe** (`0xCc4F...98AC`).
+
 3. **Hooks:** `SingleMintHook` (`0xc5cA...FC6D`) enforces strict single-token limits per account for soulbound badges.

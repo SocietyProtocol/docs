@@ -36,5 +36,7 @@ Civilization only needs **one** impeccably secure, highly modular, and credibly 
 To allow thousands of diverse communities to trust and adopt Society Protocol, the core codebase adheres strictly to three principles:
 
 1. **Impeccable Security:** Entrusting human identity and society to a state machine carries immense responsibility. The core layers undergo rigorous battle-testing and concentric audit rings.
+
 2. **Modular Architecture:** Communities configure distinct Value Functions (Parenting, Hunting, Property, Curation, Governance, Communication) without altering core security.
+
 3. **Credible Neutrality:** The stewards of the codebase remain strictly neutral. The core team does not start or rule SP instances; it builds the generic, fair infrastructure for all instances to bloom.

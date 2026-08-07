@@ -7,8 +7,11 @@ Partner communities are aligned Web3 projects and DAOs deploying custom badges v
 ## 🤝 Partner Affiliation Benefits
 
 In exchange for annual association dues and ideological alignment, Gold, Silver, and Bronze partner communities receive:
+
 1. **Official Web3 Outpost Enclave:** Dedicated UI management tools for their community inside the Web3 Outpost application.
+
 2. **Priority Feature Pipeline:** Direct input into features built into the Society Protocol codebase.
+
 3. **SPEC Token Compensation & Badges:** Official partner badges and SPEC distribution allocations.
 
 ---
