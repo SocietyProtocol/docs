@@ -56,9 +56,7 @@ nav:
   - Technical:
       - Badge IDs: technical/badge-ids.md
       - Contracts: technical/contracts.md
-  - Directories:
-      - Partners: directories/partners.md
-      - Team & Advisors: directories/team-advisors.md
+
 
 # Link custom styling
 extra_css:

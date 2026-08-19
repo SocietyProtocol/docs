@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e60ba4f579006a6c",
+        "id": "e10dca1b48858cce",
         "type": "tabs",
         "children": [
           {
-            "id": "7ae5f4c6eceafa0f",
+            "id": "ce46b121b01dfcf3",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -37,7 +37,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -65,12 +67,16 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -90,7 +96,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "concepts/outpost-launchpad.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for outpost-launchpad"
+              "title": "Backlinks"
             }
           },
           {
@@ -161,12 +166,12 @@
               "title": "Outline of outpost-launchpad"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,8 +184,47 @@
       "bases:Create new base": false
     }
   },
-  "active": "584a98490b357dc9",
+  "floating": {
+    "id": "245b5b03e470415c",
+    "type": "floating",
+    "children": [
+      {
+        "id": "80e3c9cdb15e4c39",
+        "type": "window",
+        "children": [
+          {
+            "id": "e22e054833dbd565",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "02ff081197ebe561",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "New tab"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 208,
+        "y": 30,
+        "width": 1024,
+        "height": 800,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "61347a1145eed80e",
   "lastOpenFiles": [
+    "SP second brain.md",
+    "Untitled.base",
+    "2026-08-13.md",
+    "Untitled",
     "extrainfo2.md",
     "SP badges images/moderator.png",
     "SP badges images/Silver VIP.png",

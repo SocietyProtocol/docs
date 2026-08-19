@@ -1,66 +1,49 @@
-# FAQ & zkTLS Verification
+## ❓ Frequently Asked Questions
 
-This page answers Frequently Asked Questions and provides a deep dive into **zkTLS & Off-Chain Verification**, explaining how Web2 credentials and private data are brought on-chain to claim badges without compromising privacy.
+### What is the Web3 Outpost?
 
----
+The Web3 Outpost serves as the **Schelling Point** for the Society Protocol movement, providing a decentralized and censorship-resistant coordination hub. It uses Web3 rails, specifically Ethereum, to track individual contributions, host community content, and manage the organization’s financial substrate.
 
-## 🔒 What is zkTLS & Off-Chain Verification?
+### What is the primary purpose of the Outpost?
 
-**zkTLS (Zero-Knowledge Transport Layer Security)** is a cryptographic technology that allows users to generate zero-knowledge proofs of Web2 TLS web sessions (e.g. logging into Twitter, GitHub, bank portals, or government passport verification systems).
+Its core mission is to facilitate the transition from Nation States to **Synchronized States** (Web4). It accomplishes this by:
 
-### Key Benefits
+- **Binding the community together** through shared identity and communication.
+- Providing a **sybil-resistant identity map** of all participants and their characteristics.
+- Acting as the **"legitimate lineage" or map** that allows anyone to launch unique Web4 Society Protocol instances with a pre-verified set of "Genesis Actors".
 
-1. **Privacy-Preserving:** Proven credentials (e.g. "User is over 18" or "User holds verified GitHub account") are verified on-chain **without** revealing passwords, personal identifying information, or API tokens.
+### How does identity work within the Outpost?
 
-2. **Trustless Verification:** Proofs are verified directly by Society Protocol smart contract hooks (such as `SingleMintHook` at `0xc5cA...FC6D`).
+Identity is managed through a system of unique accounts and **ERC-1155 badges** on Ethereum. These badges represent different roles and characteristics, such as:
 
-3. **Sybil Resistance:** Prevents bot farming by linking unique physical or off-chain identity proofs to single Ethereum addresses.
+- **Governor badges** for decision-making authority.
+- **VIP access badges** for exclusive communication channels.
+- **Profile and zkTLS badges** that link to social media, financial records, or real-world identities.
+- **Partner badges** for officially affiliated communities.
 
----
+### Who governs the Web3 Outpost and the Society Protocol DAO?
 
-## ⚙️ How zkTLS Badge Verification Works
+The Outpost is governed meritocratically by the **Society Protocol DAO**, which is composed of identified **Governors** rather than anonymous token holders. The voting power is split between two primary groups:
 
-```
-+------------------+         Web2 TLS Session        +-------------------+
-|  User's Browser  | <-----------------------------> |  Web2 Provider    |
-| (zkTLS Prover)   |                                 | (Twitter/GitHub)  |
-+------------------+                                 +-------------------+
-         |
-         | Generates Zero-Knowledge Proof (ZKP)
-         v
-+------------------+       Submit Proof              +-------------------+
-| Society Protocol | ------------------------------> | Smart Contract    |
-| Claim Interface  |                                 | Verification Hook |
-+------------------+                                 +-------------------+
-                                                               |
-                                                               v
-                                                     +-------------------+
-                                                     | Mint ERC-1155     |
-                                                     | Off-Chain Badge   |
-                                                     +-------------------+
-```
+- **Core Team:** Holds approximately **38%** of decision-making power and acts as the execution arm.
+- **Affiliates & Partners:** Hold approximately **62%** of the power to provide strategic guidance and expertise.
 
----
+### What is the role of the SPEC token in the Outpost?
 
-## ❓ Frequently Asked Questions (FAQ)
+The **SPEC token** is designed to measure and store the **objective value of contribution** to the movement. While it is not directly used for execution in DAO governance to prevent sybil attacks, it serves several critical functions:
 
-### General Questions
+- **Feedback Mechanism:** SPEC holders can vote alongside Governors to signal community support.
+- **Stored Value:** It represents value that will be recognized by future Web4 communities to allocate **Energy** (voting power/money) to participants.
+- **Access:** Locking up SPEC provides entry into tiered **VIP communication channels** (Gold, Silver, and Bronze).
 
-#### Q: Do I need to pay gas to claim badges?
-**A:** Official badges minted on Ethereum Mainnet require standard gas. However, for select community badges, gasless meta-transactions (EIP-712) or Layer-2 wrapper deployments are supported.
+### How does the Outpost help launch Web4 Society Protocol instances?
 
-#### Q: Are official badges transferable?
-**A:** Most official governance and role badges (IDs `11`–`13`, `24`–`28`) are **Soulbound** (non-transferable) to protect credential integrity. VIP Badges (IDs `14`–`16`) are tied to SPEC lockup vaults and burn upon token withdrawal.
+The Outpost provides the data necessary to avoid "coordination nightmares" when starting a new society. When a community launches a Web4 instance, they use the Outpost’s **sybil-resistant map** to decide who to invite (based on badges) and how much **Energy** to give them (based on SPEC holdings). This allows new societies to start with legitimate, interested participants immediately at scale.
 
-#### Q: What happens if I lose access to my wallet?
-**A:** Because official badges are cryptographically tied to your wallet address, you must re-verify your identity or re-lock SPEC tokens from a new wallet address. Security Council revocation can clear lost address holdings upon request.
+### How long will the Web3 Outpost be active?
 
----
+The Outpost is not a temporary tool; it is designed to remain valuable and necessary for the **entire transition period**, estimated to last between **20 and 75 years**. It will stand as vital infrastructure until humanity has fully transitioned into Synchronized States.
 
-### Technical & Developer Questions
+### Is the movement decentralized?
 
-#### Q: Where is badge metadata stored?
-**A:** All badge metadata JSON files and visual assets are permanently pinned to IPFS and indexed by `CommunityRegistry` (`0xEa008f15E1454C79D6AA7B95Dd3E1d39Ba32EB76`).
-
-#### Q: Can I use Society Protocol badges in my Discord server?
-**A:** Yes! Any Discord server can integrate Guild.xyz, Collab.Land, or Society Protocol's native OAuth bot pointing to `SocietyProtocolBadges` (`0x2313...6763`).
+Yes. The movement is designed as a **network of replaceable nodes and hubs** aggregated around censorship-resistant infrastructure. If one person or hub is removed, they can be easily replaced, ensuring the movement remains resilient against external pressures. All core development and organizational structures are conducted **openly and transparently** to prevent political capture.

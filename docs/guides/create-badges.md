@@ -18,7 +18,7 @@ Deploying custom badges through the factory provides your project with instant c
 
 ### Method 1: Web Interface (Recommended)
 
-1. Navigate to the **[Community Developer Console](https://app.societyprotocol.io/developers/create-wrapper)**.
+1. Navigate to the **[Community Developer Console](https://app.societyprotocol.io/badges)** (accessible once logged in).
 
 2. Connect your community admin wallet (or Safe multisig).
 

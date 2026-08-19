@@ -10,23 +10,23 @@ VIP Badges are earned by locking **SPEC tokens** (`0x6AcD...18BA`) into protocol
 
 ### Access Tiers & Badges
 
-#### 🥇 Gold VIP Badge (Badge ID: 16)
+#### 🥉 Bronze VIP Badge (Badge ID: 14)
 
-![Gold VIP Badge](../SP%20badges%20images/Gold%20VIP.png)
+![Bronze VIP Badge](../SP%20badges%20images/Bronze%20VIP.png)
 
-- **Access Level:** Highest tier access. Direct core team AMA channels, leadership working groups, and priority alpha discussions.
+- **Access Level:** Entry-tier access. General VIP rooms for serious community discussion, free of spam and with active core team presence.
 
 #### 🥈 Silver VIP Badge (Badge ID: 15)
 
 ![Silver VIP Badge](../SP%20badges%20images/Silver%20VIP.png)
 
-- **Access Level:** Mid-tier access. Specialized research workstreams and regional networking rooms.
+- **Access Level:** Mid-tier access. A gathering space primarily for our network of partner communities, and those who want to connect with them.
 
-#### 🥉 Bronze VIP Badge (Badge ID: 14)
+#### 🥇 Gold VIP Badge (Badge ID: 16)
 
-![Bronze VIP Badge](../SP%20badges%20images/Bronze%20VIP.png)
+![Gold VIP Badge](../SP%20badges%20images/Gold%20VIP.png)
 
-- **Access Level:** Entry-tier access. General VIP discussion channels and token-locked rooms.
+- **Access Level:** Elite tier access. Channels designed for advisors, gold community partners, and the SP leadership (founder + CEO).
 
 ---
 

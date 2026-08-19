@@ -6,26 +6,33 @@ Governance and Core Badges represent operational responsibility, voting weight i
 
 ## 🏛️ DAO Governance Power Split
 
-The SP DAO governance power is distributed meritocratically between execution and strategic guidance:
+To complete the description of the **DAO Governance Power Split** for the Society Protocol DAO (the Web3 Outpost), the distribution between the two meritocratic groups is as follows:
 
-- **Core Team (~38% Voting Power):** Core Team Badges (`25`) grant execution leadership to full-time researchers, engineers, and operational stewards.
-- **Affiliates & Partners (~62% Voting Power):** Advisor Badges (`24`) and Partner Community Badges grant strategic oversight to accredited advisors and partner communities.
+- **Core Team (Execution Arm): ~38%** of the decision-making power. The core team is responsible for daily execution, research, design, and the development of the Society Protocol codebase.
+- **Affiliates & Partners (Strategic Guidance): ~62%** of the total voting power. This group, which includes advisors and partner communities, is tasked with guiding the movement’s strategic direction and providing technical, social, and financial support.
+
+### The Web4 Instance Distribution
+
+- **Community Sovereignty:** Each community that launches its own **Web4 Society Protocol instance** chooses its own distribution for "Genesis Actor" roles and **Energy** (the unit of power and value in Web4).
+- **Mapping Identities:** Communities use the **Web3 Outpost** as a "sybil-resistant community map" to identify participants based on their accumulated **badges** (subjective contribution) and **SPEC tokens** (objective contribution).
+- **Energy Allocation:** A common "new way" to distribute power in these instances is for the creator to invite participants based on their badges and then allocate Energy based on the amount of **SPEC tokens** they hold.
+
+### SPEC Token Distribution (Stored Contribution)
+
+To support this meritocratic system, the total supply of **10,000,000,000 SPEC** tokens—which serve as a record of contribution to the movement—is distributed as follows:
+
+- **ICO:** 31% (forming a committed core community)
+- **Treasury:** 27% (funding future endeavors)
+- **Affiliates:** 25% (rewarding advisors and partners)
+- **Core Team:** 7% (aligning interests for developers)
+- **Retroactive Rewards:** 5% (rewarding "after-the-fact" contributions)
+- **Liquidity Providers:** 5% (incentivizing SPEC liquidity)
+
+While SPEC holders do not have direct execution authority in the DAO, they can use their tokens to provide **feedback** on governance decisions or gain access to tiered **VIP communication channels** .
 
 ---
 
 ## 🎖️ Badge Showcase & Roles
-
-### 🏛️ DAO Badge (ID: 11)
-
-![DAO Badge](../SP%20badges%20images/SP%20DAO.png)
-
-- **Description:** Issued to official SP DAO community members. Grants forum access and proposal feedback rights.
-
-### 🛡️ Security Council Badge (ID: 12)
-
-![Security Council Badge](../SP%20badges%20images/Security%20Council.png)
-
-- **Description:** Awarded to elected members of the Security Council. Grants emergency multisig keyholder privileges and circuit-breaker controls.
 
 ### 📜 Governor Badge (ID: 13)
 
@@ -61,12 +68,10 @@ The SP DAO governance power is distributed meritocratically between execution an
 
 ## 📋 Official Governance & Role Badge Registry
 
-|                             Badge Image                             | Badge Name                      | Badge ID | Mint Rule                 | Soulbound? | Primary Role / Rights              |
-| :-----------------------------------------------------------------: | :------------------------------ | :------: | :------------------------ | :--------: | :--------------------------------- |
-|         ![DAO Badge](../SP%20badges%20images/SP%20DAO.png)          | **DAO Badge**                   |   `11`   | SP DAO Vote               |    Yes     | Forum & proposal access            |
-| ![Security Council](../SP%20badges%20images/Security%20Council.png) | **Security Council Badge**      |   `12`   | Security Council Election |    Yes     | Emergency multisig keyholder       |
-|          ![Governor](../SP%20badges%20images/Governor.png)          | **Governor Badge**              |   `13`   | Meritocratic Appointment  |    Yes     | Executive DAO voting power         |
-|           ![Advisor](../SP%20badges%20images/Advisor.png)           | **Advisor Badge**               |   `24`   | Core Team Appointment     |    Yes     | Strategic guidance & ~62% DAO pool |
-|        ![Core Team](../SP%20badges%20images/Core%20Team.png)        | **Core Team Badge**             |   `25`   | 6 Months Core Service     |    Yes     | Core execution & ~38% DAO pool     |
-|       ![Contributor](../SP%20badges%20images/Contributor.png)       | **Contributor / Builder Badge** |   `26`   | Code PR / Research Merged |    Yes     | Open source builder recognition    |
-|         ![Moderator](../SP%20badges%20images/moderator.png)         | **Moderator Badge**             |   `28`   | Community Ops Approval    |    Yes     | Channel & forum moderation         |
+|                       Badge Image                       | Badge Name                      | Badge ID | Mint Rule                 | Soulbound? | Primary Role / Rights              |
+| :-----------------------------------------------------: | :------------------------------ | :------: | :------------------------ | :--------: | :--------------------------------- |
+|    ![Governor](../SP%20badges%20images/Governor.png)    | **Governor Badge**              |   `13`   | Meritocratic Appointment  |    Yes     | Executive DAO voting power         |
+|     ![Advisor](../SP%20badges%20images/Advisor.png)     | **Advisor Badge**               |   `24`   | Core Team Appointment     |    Yes     | Strategic guidance & ~62% DAO pool |
+|  ![Core Team](../SP%20badges%20images/Core%20Team.png)  | **Core Team Badge**             |   `25`   | 6 Months Core Service     |    Yes     | Core execution & ~38% DAO pool     |
+| ![Contributor](../SP%20badges%20images/Contributor.png) | **Contributor / Builder Badge** |   `26`   | Code PR / Research Merged |    Yes     | Open source builder recognition    |
+|   ![Moderator](../SP%20badges%20images/moderator.png)   | **Moderator Badge**             |   `28`   | Community Ops Approval    |    Yes     | Channel & forum moderation         |

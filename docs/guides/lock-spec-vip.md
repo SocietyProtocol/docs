@@ -23,7 +23,7 @@ Before starting, ensure you have:
 
 ### Step 1: Access the Society Protocol Portal
 Navigate to the official dApp interface:
-👉 **[Society Protocol Portal (https://app.societyprotocol.io/vip)](https://app.societyprotocol.io/vip)**
+👉 **[Society Protocol Portal (https://app.societyprotocol.io)](https://app.societyprotocol.io)**
 
 > [!CAUTION]
 > Always verify the URL and ensure your browser is connected to Ethereum Mainnet before signing transactions.
