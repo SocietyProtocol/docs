@@ -1,0 +1,6 @@
+.git
+.github
+site
+*.md
+!docs/**
+.DS_Store
