@@ -6,24 +6,22 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Project Documentation and Technical Specs">
       
       
       
       
-      
-        <link rel="next" href="concepts/badges/">
+        <link rel="next" href="concepts/codebase-vs-instances/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="assets/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Web3 Outpost Documentation</title>
+        <title>Society Protocol Docs</title>
       
     
     
@@ -51,6 +49,8 @@
     
       <link rel="stylesheet" href="stylesheets/extra.css">
     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.min.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -67,7 +67,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-is-the-web3-outpost" class="md-skip">
+        <a href="#society-protocol-web3-outpost" class="md-skip">
           Skip to content
         </a>
       
@@ -92,9 +92,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Web3 Outpost Documentation" class="md-header__button md-logo" aria-label="Web3 Outpost Documentation" data-md-component="logo">
+    <a href="." title="Society Protocol Docs" class="md-header__button md-logo" aria-label="Society Protocol Docs" data-md-component="logo">
       
-  <img src="assets/Horizontal Logo Black.svg" alt="logo">
+  <img src="assets/Icon-only-Logo-Black.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -105,13 +105,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Web3 Outpost Documentation
+            Society Protocol Docs
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Home
             
           </span>
         </div>
@@ -124,7 +124,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
@@ -134,7 +134,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
@@ -173,8 +173,6 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -217,12 +215,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Web3 Outpost Documentation" class="md-nav__button md-logo" aria-label="Web3 Outpost Documentation" data-md-component="logo">
+    <a href="." title="Society Protocol Docs" class="md-nav__button md-logo" aria-label="Society Protocol Docs" data-md-component="logo">
       
-  <img src="assets/Horizontal Logo Black.svg" alt="logo">
+  <img src="assets/Icon-only-Logo-Black.png" alt="logo">
 
     </a>
-    Web3 Outpost Documentation
+    Society Protocol Docs
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -240,6 +238,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -248,7 +248,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Home
   
 
     
@@ -266,7 +266,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Home
   
 
     
@@ -282,6 +282,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -290,99 +292,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-the-web3-outpost" class="md-nav__link">
+  <a href="#documentation-structure" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🌟 What is the Web3 Outpost?
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🌟 What is the Web3 Outpost?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#core-purpose-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Core Purpose &amp; Architecture
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#navigation-blueprint" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🗺️ Navigation Blueprint
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🗺️ Navigation Blueprint">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#overview-vision" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🚀 Overview &amp; Vision
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#badges-identity-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🎖️ Badges &amp; Identity Layer
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#spec-token-genesis-energy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ⚡ SPEC Token &amp; Genesis Energy
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#technical-reference-guides" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🛠️ Technical Reference &amp; Guides
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#smart-contract-quick-reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔒 Smart Contract Quick Reference
+        Documentation Structure
       
     </span>
   </a>
@@ -405,18 +318,6 @@
   
     
     
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
     
     
     
@@ -424,9 +325,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -465,34 +364,6 @@
   
   
     <li class="md-nav__item">
-      <a href="concepts/badges/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Badges Concept
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="concepts/codebase-vs-instances/" class="md-nav__link">
         
   
@@ -500,7 +371,7 @@
   <span class="md-ellipsis">
     
   
-    Codebase vs Instances
+    Codebase vs. Instances
   
 
     
@@ -549,42 +420,14 @@
   
   
     <li class="md-nav__item">
-      <a href="concepts/outpost-launchpad/" class="md-nav__link">
+      <a href="concepts/badges-and-accounts/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Outpost Launchpad
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="concepts/spec-token/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    SPEC Token
+    Accounts & Badges
   
 
     
@@ -613,15 +456,87 @@
   
     
     
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
       
         
-      
         
-      
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
-      
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="governance/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview & SP DAO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
     
     
     
@@ -630,12 +545,10 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -653,8 +566,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -699,14 +612,14 @@
   
   
     <li class="md-nav__item">
-      <a href="badges/ecosystem/" class="md-nav__link">
+      <a href="badges/community-partners/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Ecosystem
+    Community Partners
   
 
     
@@ -727,14 +640,96 @@
   
   
     <li class="md-nav__item">
-      <a href="badges/governance-core/" class="md-nav__link">
+      <a href="badges/community-and-contributors/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Governance Core
+    Community & Contributors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SPEC Token
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    SPEC Token
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SPEC-token/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
   
 
     
@@ -755,7 +750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="badges/vip-rooms/" class="md-nav__link">
+      <a href="SPEC-token/vip-rooms/" class="md-nav__link">
         
   
   
@@ -791,14 +786,6 @@
   
     
     
-      
-        
-      
-        
-      
-        
-      
-    
     
     
     
@@ -806,12 +793,10 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -829,8 +814,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -847,14 +832,14 @@
   
   
     <li class="md-nav__item">
-      <a href="guides/create-badges/" class="md-nav__link">
+      <a href="guides/create-account/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Create Badges
+    Create Account
   
 
     
@@ -875,14 +860,14 @@
   
   
     <li class="md-nav__item">
-      <a href="guides/faq/" class="md-nav__link">
+      <a href="guides/create-badge/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    FAQ
+    Create Badge
   
 
     
@@ -903,14 +888,70 @@
   
   
     <li class="md-nav__item">
-      <a href="guides/lock-spec-vip/" class="md-nav__link">
+      <a href="guides/create-community/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Lock SPEC VIP
+    Create Community
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="guides/create-community-badge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create Community Badge
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="guides/mint-community-badge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Add Community Members
   
 
     
@@ -939,12 +980,6 @@
   
     
     
-      
-        
-      
-        
-      
-    
     
     
     
@@ -952,12 +987,10 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
@@ -975,8 +1008,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1028,125 +1061,7 @@
   <span class="md-ellipsis">
     
   
-    Contracts
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Directories
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Directories
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="directories/partners/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Partners
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="directories/team-advisors/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Team & Advisors
+    Smart Contracts
   
 
     
@@ -1184,6 +1099,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1192,99 +1109,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-the-web3-outpost" class="md-nav__link">
+  <a href="#documentation-structure" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🌟 What is the Web3 Outpost?
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🌟 What is the Web3 Outpost?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#core-purpose-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Core Purpose &amp; Architecture
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#navigation-blueprint" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🗺️ Navigation Blueprint
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🗺️ Navigation Blueprint">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#overview-vision" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🚀 Overview &amp; Vision
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#badges-identity-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🎖️ Badges &amp; Identity Layer
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#spec-token-genesis-energy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ⚡ SPEC Token &amp; Genesis Energy
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#technical-reference-guides" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🛠️ Technical Reference &amp; Guides
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#smart-contract-quick-reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔒 Smart Contract Quick Reference
+        Documentation Structure
       
     </span>
   </a>
@@ -1308,72 +1136,18 @@
 
 
 
-  <h1>Overview</h1>
-
-<p>Welcome to the official documentation for the <strong>Society Protocol Web3 Outpost</strong>—the censorship-resistant Schelling point and launchpad bridging humanity from Web3 / Nation States to Web4 / Synchronized States.</p>
-<hr />
-<h2 id="what-is-the-web3-outpost">🌟 What is the Web3 Outpost?</h2>
-<p>The <strong>Web3 Outpost</strong> is an Ethereum-based application designed to preserve community alignment, maintain censorship-resistant accounts, and record verified histories of contributions during the multi-decade transition to Society Protocol (SP).</p>
-<h3 id="core-purpose-architecture">Core Purpose &amp; Architecture</h3>
-<ol>
-<li>
-<p><strong>The Schelling Point:</strong> Serves as a resilient, decentralized gathering ground for the Society Protocol movement, core team, advisors, partner communities, and open-source contributors.</p>
-</li>
-<li>
-<p><strong>Subjective Contribution (Accounts &amp; Badges):</strong> Issues sybil-resistant <strong>Accounts</strong> and <strong>Badges (ERC-1155)</strong> that construct a subjective identity map of user credentials, zkTLS proofs, referral chains, and characteristics (determining <strong>WHO</strong> gets invited as Genesis Actors in Web4 instances).</p>
-</li>
-<li>
-<p><strong>Objective Contribution (SPEC Token):</strong> The <strong>SPEC token (ERC-20)</strong> stores objective contribution value (determining <strong>HOW MUCH Energy</strong> each account receives at genesis).</p>
-</li>
-<li>
-<p><strong>Genesis Launchpad for SP Instances:</strong> When the Society Protocol software MVP releases (in ~3–5 years), thousands of independent <strong>Web4 SP Instances</strong> will spawn. The Web3 Outpost and SPEC token holdings provide the legitimate starting parameters for these instances.</p>
-</li>
-</ol>
-<hr />
-<h2 id="navigation-blueprint">🗺️ Navigation Blueprint</h2>
-<p>This GitBook is structured into dedicated sections to serve both community members and developers:</p>
-<h3 id="overview-vision">🚀 Overview &amp; Vision</h3>
+<h1 id="society-protocol-web3-outpost">Society Protocol Web3 Outpost</h1>
+<p>The Web3 Outpost is an Ethereum-based launchpad designed to preserve community alignment, maintain censorship-resistant accounts, and track verified contribution histories. It serves as a Schelling point bridging humanity from Web3 and Nation States into the Web4 Synchronized Era.</p>
+<h2 id="documentation-structure">Documentation Structure</h2>
+<p>This documentation is organized into six primary sections:</p>
 <ul>
-<li><a href="concepts/outpost-launchpad/">Web3 Outpost: The Web4 Launchpad</a> – How the Outpost provides starting parameters for Web4 instances.</li>
-<li><a href="concepts/codebase-vs-instances/">The Linux Model: Codebase vs. Instances</a> – Society Protocol's neutral open codebase vs. customizable community instances.</li>
+<li><strong><a href="concepts/codebase-vs-instances/">Concepts</a>:</strong> The architectural principles of Society Protocol, codebase vs. instances, and how Genesis Energy is distributed.</li>
+<li><strong><a href="governance/overview/">Governance</a>:</strong> The meritocratic DAO structure, Governor badges, and parallel feedback for SPEC holders.</li>
+<li><strong><a href="badges/overview/">Badges</a>:</strong> The identity primitive of the Outpost, including permissions, badge standards, and partner tiers.</li>
+<li><strong><a href="SPEC-token/overview/">SPEC Token</a>:</strong> Tokenomics, supply distribution, and the mechanics of locking tokens for VIP communication channels.</li>
+<li><strong><a href="guides/create-account/">Guides</a>:</strong> Step-by-step tutorials for creating accounts, minting badges, and interacting with the protocol.</li>
+<li><strong><a href="technical/badge-ids/">Technical</a>:</strong> Smart contract addresses, proxy architectures, and the Badge ID registry for developers and auditors.</li>
 </ul>
-<h3 id="badges-identity-layer">🎖️ Badges &amp; Identity Layer</h3>
-<ul>
-<li><a href="concepts/badges/">Badges &amp; Account Histories</a> – ERC-1155 credentials, badges, and referral chains.</li>
-<li><a href="badges/overview/">Official Badges &amp; Permissions</a> – The 4 ERC-1155 permissions (Mint, Burn, Transfer, Manage) and meritocratic governance.</li>
-<li><a href="badges/governance-core/">Governance &amp; Core Badges</a> – DAO Governor Seats, Core Team, Advisors, and Moderators.</li>
-<li><a href="badges/vip-rooms/">VIP Rooms &amp; SPEC Lockups</a> – Token-locked communication channels and tiers.</li>
-</ul>
-<h3 id="spec-token-genesis-energy">⚡ SPEC Token &amp; Genesis Energy</h3>
-<ul>
-<li><a href="concepts/spec-token/">SPEC Token &amp; Economics</a> – Subjective vs. objective contributions, tokenomics (10B supply), and use cases.</li>
-<li><a href="concepts/genesis-energy/">Genesis Energy &amp; Instance Airdrops</a> – How SPEC holders qualify for initial Energy distributions in upstart SP instances over decades.</li>
-</ul>
-<h3 id="technical-reference-guides">🛠️ Technical Reference &amp; Guides</h3>
-<ul>
-<li><a href="technical/contracts/">Smart Contracts Reference</a> – Verified proxy, implementation, and hook contracts on Ethereum Mainnet.</li>
-<li><a href="technical/badge-ids/">Badge ID Registry</a> – Complete token ID mapping (<code>11</code>–<code>28</code>) with badge artwork previews.</li>
-<li><a href="guides/lock-spec-vip/">Guides</a> – Step-by-step SPEC locking, badge creation, and zkTLS setup.</li>
-</ul>
-<hr />
-<h2 id="smart-contract-quick-reference">🔒 Smart Contract Quick Reference</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Network</th>
-<th style="text-align: left;">Main Proxy Address</th>
-<th style="text-align: left;">License</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>Ethereum Mainnet</strong></td>
-<td style="text-align: left;"><code>0x2313C0cDdc233c92d16c2cfE17DF5fDCcE556763</code></td>
-<td style="text-align: left;">Source-Available / MIT</td>
-</tr>
-</tbody>
-</table>
-<p><em>For complete proxy, implementation, and factory contract details, visit the <a href="technical/contracts/">Smart Contracts Reference</a>.</em></p>
 
 
 
@@ -1423,10 +1197,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.indexes", "navigation.expand", "search.suggest", "search.highlight", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"></script>
+      
+        <script src="javascripts/lightbox.js"></script>
       
     
   </body>
