@@ -66,10 +66,17 @@
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* 5. Custom Logo Dark Mode Swap */
+/* 5. Custom Logo Styling & Dark Mode Swap */
+.md-header__button.md-logo img,
+.md-nav__title .md-logo img {
+  width: auto;
+  height: 1.5rem;
+  object-fit: contain;
+}
+
 [data-md-color-scheme="slate"] .md-header__button.md-logo img,
 [data-md-color-scheme="slate"] .md-nav__title .md-logo img {
-  content: url("../assets/Horizontal Logo White.svg");
+  content: url("../assets/Icon-only-Logo-White.png");
 }
 
 /* 6. Center Site Title in Header */
@@ -82,4 +89,20 @@
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+/* 7. Image zoom cursor and rounded preview styling */
+.md-content img:not(.no-lightbox) {
+  cursor: zoom-in;
+  border-radius: 6px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.md-content img:not(.no-lightbox):hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* 8. Hide GLightbox caption/description bar entirely */
+.gslide-description {
+  display: none !important;
 }
