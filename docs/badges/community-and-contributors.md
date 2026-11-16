@@ -22,7 +22,7 @@ The goal of this channel is to cultivate a focused, low-noise environment for hi
 
 If you hold a Contributor Badge in your wallet, you can claim your role in Discord using the **Collab.Land** bot:
 
-1. **Join the Discord:** Make sure you are in the official [Society Protocol Discord server](https://discord.gg/societyprotocol).
+1. **Join the Discord:** Make sure you are in the official [Society Protocol Discord server](https://discord.com/invite/fpk7eH7aWQ).
 2. **Locate the Verification Channel:** Navigate to `#collabland-join` (or `#role-verify`).
 3. **Connect Your Wallet:** Click on the **"Let's go!"** button provided by the official Collab.Land bot.
 4. **Sign the Message:** Follow the unique link to open the Collab.Land interface in your browser and connect the Ethereum wallet that holds your Contributor Badge. Sign the gasless signature to prove ownership.
