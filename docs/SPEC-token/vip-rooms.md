@@ -29,9 +29,11 @@ Acquire VIP Badges by locking SPEC tokens (`0x6AcD...18BA`) in protocol vaults. 
 
 ## Technical Reference: SPEC Lock Tiers
 
-| Badge Name | Badge ID | SPEC Lock Threshold |
-| :--- | :---: | :---: |
-| **Bronze VIP Badge** | `14` | 1,000 SPEC |
-| **Silver VIP Badge** | `15` | 10,000 SPEC |
-| **Gold VIP Badge** | `16` | 100,000 SPEC |
+| Badge Name | Badge ID | SPEC Lock Threshold | Minimum Lock Duration |
+| :--- | :---: | :---: | :---: |
+| **Bronze VIP Badge** | `14` | 400,000 SPEC | 30 days |
+| **Silver VIP Badge** | `15` | 2,000,000 SPEC | 30 days |
+| **Gold VIP Badge** | `16` | 10,000,000 SPEC | 30 days |
+
+> **Source of truth:** Thresholds and the minimum lock duration are set on-chain in the `SocietyVipManager` contract (`0x8840...7117`, see [Smart Contracts](../technical/contracts.md)). The values above reflect Ethereum Mainnet; the contract owner (currently an externally owned account, not the SP DAO Safe) can update the tier thresholds.
 
