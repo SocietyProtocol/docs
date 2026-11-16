@@ -21,13 +21,16 @@ Canonical reference table for deployed smart contracts, proxies, implementations
 | **CommunityWrapperFactory** | Implementation | `0xF29a695E3002dCEd30DE82d1C53e5AE68195E939` | [View Address](https://etherscan.io/address/0xF29a695E3002dCEd30DE82d1C53e5AE68195E939) |
 | **CommunityRegistry** | Proxy | `0xEa008f15E1454C79D6AA7B95Dd3E1d39Ba32EB76` | [View Address](https://etherscan.io/address/0xEa008f15E1454C79D6AA7B95Dd3E1d39Ba32EB76) |
 | **CommunityRegistry** | Implementation | `0xBa7D6bD750f5D8Fe95c20738d8927BD999605fB4` | [View Address](https://etherscan.io/address/0xBa7D6bD750f5D8Fe95c20738d8927BD999605fB4) |
+| **SocietyVipManager** | Proxy | `0x884026e36e772d72beE641F6C0d78A875e867117` | [View Address](https://etherscan.io/address/0x884026e36e772d72beE641F6C0d78A875e867117) |
+| **SocietyVipManager** | Implementation | `0xA079Dbf5D09f3DcCBdE3f893860a88F0C6EBa9e6` | [View Address](https://etherscan.io/address/0xA079Dbf5D09f3DcCBdE3f893860a88F0C6EBa9e6) |
+| **EasyAuction** | Auction | `0x0b7fFc1f4AD541A4Ed16b40D8c37f0929158D101` | [View Address](https://etherscan.io/address/0x0b7fFc1f4AD541A4Ed16b40D8c37f0929158D101) |
 | **SingleMintHook** | Hook | `0xc5cA371c5F715E9d420941C1377e7682780bFC6D` | [View Address](https://etherscan.io/address/0xc5cA371c5F715E9d420941C1377e7682780bFC6D) |
 
 ---
 
 ## Architectural Overview
 
-1. **ERC-1967 Proxies:** Core contracts (`SocietyProtocolBadges`, `CommunityWrapperFactory`, `CommunityRegistry`) use transparent proxies. Integrations interact exclusively with proxy addresses.
+1. **ERC-1967 Proxies:** Core contracts (`SocietyProtocolBadges`, `CommunityWrapperFactory`, `CommunityRegistry`, `SocietyVipManager`) use UUPS proxies: upgrade logic lives in the implementation contract, not in a separate proxy admin. Integrations interact exclusively with proxy addresses. `EasyAuction` is not proxied.
 
 2. **Multisig Safes:** Treasury and contract upgrades are managed by the SP DAO Safe (`0xdfdC...7579`). Emergency circuit breakers are managed by the Security Council Safe (`0xCc4F...98AC`).
 
